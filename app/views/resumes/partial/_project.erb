@@ -1,0 +1,20 @@
+<div id="project">
+  <div class="experience">
+    <h5 style="text-align: center;">项目经历</h5>
+    <ul>
+      <% @resume.project.each_with_index do |project, i| %>
+          <li id="project-<%= i %>">
+            <div class="experience-icon icon-suitcase"></div>
+            <div class="experience-content">
+              <h4 class="experience-name">
+                <%= project.name %>
+                <span style="float: right"><%= project.start_date %> — <%= project.end_date %></span>
+              </h4>
+              <p><%= project.title %></p>
+              <%= project.description %>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

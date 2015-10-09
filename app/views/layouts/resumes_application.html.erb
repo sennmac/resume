@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= 'x-mac'%></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body data-spy="scroll" data-target="#navbar-side" data-offset="60" style="background-color: #ECF0F1">
+
+<div class="container" id="top">
+  <div class="row">
+    <div class="col-md-10">
+      <div id="navbar" class="navbar navbar-default navbar-fixed-top affix-top row">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand page-scroll" href="#top"><%= @resume.name%></a>
+          </div>
+        </div>
+
+      </div>
+      <%= yield %>
+
+    </div>
+    <div class="col-md-1" id='navbar-side' role="complementary" style="margin-top: 60px">
+      <nav class="navbar-side hidden-print hidden-xs hidden-sm affix" style="background-color: #ECF0F1">
+        <ul class="nav">
+          <li><a class="page-scroll" href="#base">简介</a></li>
+          <li><a class="page-scroll" href="#experience">工作经历</a></li>
+          <li><a class="page-scroll" href="#education">教育经历</a></li>
+          <li><a class="page-scroll" href="#project">项目经历</a></li>
+          <li><a class="page-scroll" href="#description">自我描述</a></li>
+          <li><a class="page-scroll" href="#skills">技能树</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+</div>
+<script>
+    (function ($) {
+        "use strict"; // Start of use strict
+        $('a.page-scroll').bind('click', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: ($($anchor.attr('href')).offset().top - 60)
+            }, 300, 'easeInExpo');
+            event.preventDefault();
+        });
+    })(jQuery); // End of use strict
+
+</script>
+
+
+
+</body>
+</html>

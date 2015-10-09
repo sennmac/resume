@@ -1,0 +1,29 @@
+<div id="skills">
+  <div class="experience">
+    <h5 style="text-align: center;">技能图</h5>
+    <div style="text-align: center;">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+  </div>
+</div>
+<script>
+    var data = {
+        labels : <%= raw(@resume.skills.map(&:name))%>,
+        datasets : [
+            {
+                fillColor : "rgba(151,187,205,0.5)",
+                strokeColor : "rgba(151,187,205,1)",
+                pointColor : "rgba(151,187,205,1)",
+                pointStrokeColor : "#fff",
+                data : <%=  raw(@resume.skills.map(&:point))%>
+            },
+        ]
+    };
+    var ctx = document.getElementById("myChart").getContext("2d");
+    new Chart(ctx).Radar(data,{
+        scaleOverride: true,
+        scaleSteps: 10,
+        scaleStepWidth: 10,
+        scaleStartValue: 0
+    });
+</script>

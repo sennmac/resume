@@ -1,0 +1,16 @@
+<div id="base" style="border-radius: 6px; background: #2C3E50; margin-bottom: 20px;padding: 10px;">
+  <div class="row">
+    <div class="col-xs-2">
+      <img src="/imgs/<%= @resume.photo %>" alt="example-image" class="img-rounded img-responsive">
+    </div>
+    <div class="col-xs-10" style="color: white">
+      <img src="/imgs/ribbon.svg" alt="ribbon" class="tile-hot-ribbon">
+
+      <p class="lead"><%= @resume.base_description.lead %></p>
+
+      <p><%= @resume.base_description.introduction %></p>
+
+      <p><%= @resume.base_description.contact %></p>
+    </div>
+  </div>
+</div>

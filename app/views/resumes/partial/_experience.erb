@@ -1,0 +1,22 @@
+<div id="experience">
+  <div class="experience">
+    <h5 style="text-align: center;">工作经历</h5>
+    <ul>
+      <% @resume.experience.each_with_index do |experience, i| %>
+          <li id="experience-<%= i %>">
+            <div class="experience-icon icon-coffee"></div>
+            <div class="experience-content">
+              <h4 class="experience-name">
+                <%= experience.company %>
+                <span style="float: right"><%= experience.start_date %> — <%= experience.end_date %></span>
+              </h4>
+
+              <p><%= experience.title %></p>
+              <%= experience.description %>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,82 @@
+.experience {
+    margin-bottom: 20px;
+    color: #798795;
+    border-radius: 6px;
+}
+
+.experience ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #2c3e50;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.experience li {
+    position: relative;
+    padding: 18px 42px 21px 25px;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 1.214;
+    cursor: pointer;
+    background: #34495e;
+    background-size: 20px 20px;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+
+.experience li:first-child {
+    margin-top: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.experience li:last-child {
+    padding-bottom: 21px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.experience li:hover {
+    background: #2C3E50;
+}
+
+.experience-icon {
+    float: left;
+    padding: 11px 22px 0 0;
+    font-size: 24px;
+}
+
+.experience-content {
+    padding-top: 1px;
+    overflow: hidden;
+}
+
+.experience-name {
+    margin: 1px 0 3px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.navbar-side .nav > .active:focus > a, .navbar-side .nav > .active:hover > a, .navbar-side .nav > .active > a {
+    padding-left: 18px;
+    font-weight: 700;
+    color: #563d7c;
+    background-color: transparent;
+    border-left: 2px solid #563d7c;
+}
+
+.tile-hot-ribbon {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    display: block;
+    width: 80px;
+}
+
+.base_block {
+    border-radius: 6px;
+    background: #2C3E50;
+    margin-bottom: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,19 @@
+<div id="education">
+  <div class="experience">
+    <h5 style="text-align: center;">教育经历</h5>
+    <ul>
+      <% @resume.education.each_with_index do |education, i| %>
+          <li id="education-<%= i %>">
+            <div class="experience-icon  icon-graduate"></div>
+            <div class="experience-content">
+              <h4 class="experience-name">
+                <%= education.school %>
+                <span style="float: right"><%= education.start_date %> — <%= education.end_date %></span>
+              </h4>
+              <%= education.description %>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

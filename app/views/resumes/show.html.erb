@@ -1,0 +1,5 @@
+<div style="margin-top: 60px">
+  <% %w{base experience education project description skills}.each do |partial| %>
+      <%= render :partial => "resumes/partial/#{partial}" %>
+  <% end %>
+</div>

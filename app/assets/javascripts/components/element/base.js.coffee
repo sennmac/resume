@@ -14,8 +14,8 @@
           className: 'col-xs-10'
           style: {color: 'white'}
           React.DOM.img
-            src: '/imgs/ribbon.svg'
-            className: 'tile-hot-ribbon',
+            src: '/imgs/'+@props.resume.status+'.svg'
+            className: 'tile-'+@props.resume.status,
           React.DOM.p
             className: 'lead'
             @props.resume.base_description.lead

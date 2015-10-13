@@ -12,6 +12,7 @@
             React.DOM.div
               className: 'experience-icon icon-coffee'
             React.DOM.div
+              dangerouslySetInnerHTML: 1
               className: 'experience-content'
               React.DOM.h4
                 className: 'experience-name'

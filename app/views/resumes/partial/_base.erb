@@ -4,7 +4,7 @@
       <img src="/imgs/<%= @resume.photo %>" alt="example-image" class="img-rounded img-responsive">
     </div>
     <div class="col-xs-10" style="color: white">
-      <img src="/imgs/ribbon.svg" alt="ribbon" class="tile-hot-ribbon">
+      <img src="/imgs/<%= @resume.status %>.svg" alt="ribbon" class="tile-<%= @resume.status %>">
 
       <p class="lead"><%= @resume.base_description.lead %></p>
 

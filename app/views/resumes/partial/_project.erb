@@ -11,7 +11,7 @@
                 <span style="float: right"><%= project.start_date %> — <%= project.end_date %></span>
               </h4>
               <p><%= project.title %></p>
-              <%= project.description %>
+              <%= raw(project.description) %>
             </div>
           </li>
       <% end %>

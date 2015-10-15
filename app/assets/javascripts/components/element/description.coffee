@@ -9,4 +9,4 @@
           '自我描述'
         React.DOM.ul null,
           React.DOM.li null,
-            @props.resume.description.description
+            render_with_br(@props.resume.description.description)

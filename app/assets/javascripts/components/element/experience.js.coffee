@@ -12,7 +12,6 @@
             React.DOM.div
               className: 'experience-icon icon-coffee'
             React.DOM.div
-              dangerouslySetInnerHTML: 1
               className: 'experience-content'
               React.DOM.h4
                 className: 'experience-name'
@@ -22,4 +21,4 @@
                 experience.company
               React.DOM.p null,
                 experience.title
-              experience.description
+              render_with_br(experience.description)

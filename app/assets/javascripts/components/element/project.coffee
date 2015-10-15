@@ -21,4 +21,4 @@
                 project.name
               React.DOM.p null,
                 project.title
-              project.description
+              render_with_br(project.description)

@@ -17,7 +17,6 @@
 //= require react_ujs
 //= require components
 //= require bootstrap
-//= require bootstrap
 //= require chart
 //= require flat-ui
 //= require jquery.easing.min

@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   config.react.variant = :development
+  #config.react.jsx_transform_options = {harmony: true,strip_types: true}
+  config.react.jsx_transform_options = {harmony: true,strip_types: true}
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development

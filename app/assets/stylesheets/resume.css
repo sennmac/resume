@@ -80,3 +80,12 @@
     margin-bottom: 20px;
     padding: 10px;
 }
+
+.weixin_tag {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+}
